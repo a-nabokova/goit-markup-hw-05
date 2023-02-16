@@ -26,7 +26,9 @@
           >
           <ul class="header-list header-wrap">
             <li class="header-item list">
-              <a class="header-link link item-link" href="./index.html"
+              <a
+                class="header-link link item-link header-current"
+                href="./index.html"
                 >Studio
               </a>
             </li>
@@ -66,7 +68,9 @@
 
       <section class="hero overlay">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">Order Service</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Order Service
+        </button>
       </section>
 
       <!--Section 1-->
@@ -367,52 +371,68 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="container foot">
-        <div class="footer-wrap">
-          <a class="footer-logo link" href="./index.html"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing &#38; growth solutions.
-          </p>
+
+      <!-- Footer  -->
+
+      <footer class="footer">
+        <div class="container foot">
+          <div class="footer-wrap">
+            <a class="footer-logo link" href="./index.html"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing &#38; growth solutions.
+            </p>
+          </div>
+          <div class="soc">
+            <p class="footer-soc-text">Social media</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="soc">
-          <p class="footer-soc-text">Social media</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link link">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+      </footer>
+      <!-- BACKDROP -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </footer>
+    </main>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
